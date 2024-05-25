@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Test ISO-2022-CN-EXT Vulnerability</title>
+</head>
+<body>
+  <h1>Test ISO-2022-CN-EXT Vulnerability</h1>
+  <form method="post" action="vulnerable.php">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <label for="charset">Character Set:</label>
+    <input type="text" id="charset" name="charset" value="ISO-2022-CN-EXT"><br><br>
+    <input type="submit" value="Sign In">
+  </form>
+</body>
+</html>
